@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>todo</title>
+    <link rel="stylesheet" href="todo.css" />
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="nav-div">
+        <div class="nav-box">
+          <img src="todo.png" alt="" class="logo" />
+        </div>
+        <div class="nav-box">
+          <h1 class="nav-h1">My todo app</h1>
+        </div>
+        <div class="nav-box">
+          <img src="mypic.jpg" alt="" class="my-img" />
+        </div>
+      </div>
+    </nav>
+    <div class="main-todo">
+      <div class="todo">
+        <div class="in-todo">
+          <h6 class="todo-h6">TO DO</h6>
+        </div>
+        <button class="add-button" hidden>
+          <div class="add-button-div">
+            <h6>Add task</h6>
+            <img class="add-vector" src="add.jpg" alt="" />
+          </div>
+        </button>
+      </div>
+      <div class="todo">
+        <div class="in-todo">
+          <h6 class="todo-h6">In Progress</h6>
+        </div>
+      </div>
+      <div class="todo">
+        <div class="in-todo">
+          <h6 class="todo-h6">Done</h6>
+        </div>
+      </div>
+    </div>
+    <div class="modal-bg">
+      <div class="moadl">
+        <h1 class="modal-titel">Add Task</h1>
+        <div class="modal-item">
+          <label for="name">name</label>
+          <input type="text" />
+        </div>
+        <div class="modal-item">
+          <label for="descriptin">descriptin</label>
+          <input type="text" class="des-input" />
+        </div>
+        <div class="modal-item">
+          <label for="severity">severity</label>
+          <select name="severity-box">
+            <option value="normal">normal</option>
+            <option value="important">important</option>
+            <option value="urgent">urgent</option>
+          </select>
+        </div>
+        <div class="modal-item modal-buttons">
+          <button class="modal-button" style="background-color: #7c83fd">
+            Add
+          </button>
+          <button class="modal-button">cancel</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="todo.js"></script>
+  </body>
+</html>
